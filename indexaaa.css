@@ -1,0 +1,102 @@
+body, h1, p .author, footer, .about {
+  text-align: center;
+}
+
+h1, p .author, .about h3, .links h3, .imag h3 {
+  color: #1AA1E8;
+}
+
+.imag figure, footer, .about, .about p:hover, body {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imag h3, h1, .about h3, .links h3 { text-decoration: underline; }
+
+body {
+  background-color: black;
+  background-image: url(https://49.media.tumblr.com/tumblr_lq5hs9voSZ1qm2lx2o1_400.gif);
+  font-family: "Source Code Pro";
+}
+
+.image img { max-height: 40px; }
+
+
+p.author {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.imag img.thumbnail {
+  width: 200px;
+  display: inline-block;
+}
+
+.imag img.thumbnail:hover { width: 225px; }
+
+.imag a { padding: 20px; }
+
+.imag figure { display: inline-block; }
+
+.imag a figure figcaption {
+  color: lightgray;
+  text-decoration: overline;
+}
+
+footer {
+    background-color: #1AA1E8;
+    color: black;
+    font-size: 0.9em;
+    padding: 0.5em;
+    width: 80%;
+}
+
+.about {
+  font-size: 16px;
+  width: 40%;
+  font-stretch: 5px;
+
+}
+
+.about h3 {
+  font-size: 18px;
+}
+
+.about p {
+  border-radius: 24px;
+  color: #00ff00;
+  line-height: 25px;
+}
+
+.links {
+  padding: 0;
+}
+
+.links li {
+      display: inline;
+      list-style-type: none;
+}
+
+.links a {
+  padding-right: 20px;
+  color: #00ff00;;
+}
+
+.links li:last-child {
+  padding-right: 0;
+}
+
+.links a:hover {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.links h3, .imag h3 { font-size: 18px; }
+
+.about p:hover {
+  font-size: 26px;
+  line-height: 30px;
+  background-color: black;
+  border-radius: 24px;
+}

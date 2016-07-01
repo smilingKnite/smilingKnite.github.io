@@ -1,0 +1,114 @@
+<DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset='utf-8' />
+<title>Rolling Basketball</title>
+<link rel="stylesheet" type="text/css" href="portfolio.css" />
+<script type='text/javascript' src='contents.js'>
+    </script>
+
+
+</head>
+
+<body>
+
+<h1>Rolling Basketball</h1>
+
+<p class='author'>
+Tyler Mondragon
+</p>
+
+<p class='image'>
+<svg width='1200' height='200' xmlns="http://www.w3.org/2000/svg"
+    viewbox='0 0 1200 200'
+    xmlns:xlink= "http://www.w3.org/1999/xlink">
+
+    <!-- put your SVG code here -->
+
+    <!-- put your DEFS section here -->
+    <defs>
+        <clipPath id='clip'>
+            <circle cx='100' cy='100' r='40' fill='orange' />
+        </clipPath>
+    </defs>
+
+    <!-- put your various shapes and text here -->
+    <rect x='10' y='140' width='1200' height='10' fill='gray' />
+
+
+    <g clip-path='url(#clip)' id='bball' >
+        <circle cx='100' cy='100' r='40' fill='orange' />
+        <circle cx='140' cy='140' r='40' fill='none' stroke-width='1.5' stroke='black' />
+        <circle cx='60' cy='60' r='40' fill='none' stroke-width='1.5' stroke='black' />
+        <line x1='0' y1='0' x2='200' y2='200' stroke='black' />
+        <line x1='0' y1='200' x2='200' y2='0' stroke='black' />
+    </g>
+
+
+</svg>
+
+
+<script type='text/javascript'>
+
+    var xloc = 0;
+    var rotation = 0;
+    var xchange = 1.5;
+    var rotchange = xchange * 1.43;
+
+    animate ();
+
+    function animate () {
+
+        var bball = document.getElementById ('bball');
+        xloc += xchange;
+        xloc %= 1000;
+        rotation += rotchange;
+        rotation %= 360;
+
+        bball.setAttribute ("transform",
+                            "translate(" + xloc + " 0)" +
+                            " rotate(" + rotation + " 100 100)"
+                            );
+
+                            //transform='translate(10 0) rotate(45 100 100)'
+
+                            setTimeout (animate, 25);
+    }
+
+    </script>
+</p>
+
+<p class='description'>
+This was done is SVG and was not that challenging. The only thing that stumped the class was figuring out which speed made the animation look more realistic. I figured out the speed that looked as realistic and true to physics as I could find and the class had gone off of that.
+</p>
+
+<div id="nav">
+
+    <!--a href='geoffry_3.html'>
+        <img src='white-left.png'/>
+    </a>
+
+    <a href='index.html'>
+        <img src='white-waffle.png' />
+    </a>
+
+    <a href='dreamState_5.html'>
+        <img src='white-right.png' />
+    </a-->
+</div>
+
+<div id='footer'>
+    Copyright &copy; Tyler Mondragon 2016
+</div>
+
+<script type='text/javascript'>
+    makeNav();
+    </script>
+
+
+
+</body>
+
+</html>

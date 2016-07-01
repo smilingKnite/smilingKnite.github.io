@@ -1,0 +1,47 @@
+body {
+   text-align: center;
+   font-family: "Gill Sans", "Source Code Pro",  Helvetica, "ariel", sans-serif;
+   background-color: black;
+   background-image: url(https://49.media.tumblr.com/tumblr_lq5hs9voSZ1qm2lx2o1_400.gif);
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.image img {
+   max-height: 500px;
+   box-shadow: 0 3px 4px 0 #aaaaaa; }
+
+h1 {
+  font-family: "Source Code Pro";
+  font-weight: normal;
+  color: #1AA1E8;
+  }
+
+p.description {
+   margin-left: auto;
+   margin-right: auto;
+   width: 40%;
+   text-align: center;
+   color: lightgray;
+   background-color: black;
+   font-stretch: 8px;
+}
+
+a {  }
+
+div#nav img {
+  width: 64px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px
+}
+
+div#footer {
+  background-color: #1AA1E8;
+  color: black;
+  font-size: 0.9em;
+  padding: 0.25em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
